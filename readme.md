@@ -1,7 +1,7 @@
 - Open `chrome://extensions/` 
 - Load unpacked extension
 - Open Employeer portal page
-- Open devtools and select the panel `BairesDevTracker Calendar View`
+- Open devtools and select the panel `BDTracker Calendar View`
 - Click on the filter search
 - Wait calendar to be rendered
 
