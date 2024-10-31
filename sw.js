@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  if (request.type === "bdevExtCalendarData") {
+  if (request.type === "bdExtCalendarData") {
     renderCalendar(request.response.data);
   }
 });
