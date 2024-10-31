@@ -8,8 +8,14 @@
 
 (to have the list back on view, just close the devtools and reload the page)
 
+![Screenshot 2024-10-31 at 10 43 02](https://github.com/user-attachments/assets/0bdaa48d-c344-4a58-8e24-3915f456a7f5)
 
 
-https://betterprogramming.pub/chrome-extension-intercepting-and-reading-the-body-of-http-requests-dd9ebdf2348b
 
-https://fullcalendar.io/
+
+References: 
+- https://github.com/GoogleChrome/chrome-extensions-samples
+- https://betterprogramming.pub/chrome-extension-intercepting-and-reading-the-body-of-http-requests-dd9ebdf2348b
+- https://fullcalendar.io/
+
+
