@@ -1,1 +1,1 @@
-chrome.devtools.panels.create("BairesDevTracker Calendar View", null, "panel.html");
+chrome.devtools.panels.create("BDTracker Calendar View", null, "panel.html");
