@@ -1,0 +1,39 @@
+{
+  "name": "BairesDev TimeTracker CalendarView",
+  "version": "1.0.7",
+  "manifest_version": 3,
+  "minimum_chrome_version": "120",
+  "description": "Show a calendar view for TimeTracker.",
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "debugger",
+    "browsingData",
+    "declarativeNetRequest",
+    "webNavigation",
+    "scripting",
+    "userScripts",
+    "webRequest",
+    "nativeMessaging",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://employees.bairesdev.com/time-tracker*"
+      ],
+      "js": [
+        "index.global.min.js",
+        "content-script.js"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://employees.bairesdev.com/time-tracker*"
+  ],
+  "action": {},
+  "devtools_page": "devtools.html"
+}
