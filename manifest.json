@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://employees.bairesdev.com/time-tracker*"
+        "*/time-tracker"
       ],
       "js": [
         "index.global.min.js",
@@ -32,7 +32,7 @@
     }
   ],
   "host_permissions": [
-    "https://employees.bairesdev.com/time-tracker*"
+    "*/time-tracker"
   ],
   "action": {},
   "devtools_page": "devtools.html"
