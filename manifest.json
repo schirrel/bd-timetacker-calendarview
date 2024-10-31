@@ -23,7 +23,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*/time-tracker"
+        "*://*/time-tracker"
       ],
       "js": [
         "index.global.min.js",
@@ -32,7 +32,7 @@
     }
   ],
   "host_permissions": [
-    "*/time-tracker"
+    "*://*/time-tracker"
   ],
   "action": {},
   "devtools_page": "devtools.html"
