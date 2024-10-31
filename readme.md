@@ -1,6 +1,6 @@
 - Open `chrome://extensions/` 
 - Load unpacked extension
-- Open `https://employees.bairesdev.com/time-tracker` page
+- Open Employeer portal page
 - Open devtools and select the panel `BairesDevTracker Calendar View`
 - Click on the filter search
 - Wait calendar to be rendered
