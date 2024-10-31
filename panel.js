@@ -6,7 +6,7 @@ chrome.devtools.network.onRequestFinished.addListener((request) => {
         var bodyObj = JSON.parse(body); //etc.
         console.log(bodyObj);
         chrome.runtime.sendMessage({
-          type: "bdevExtCalendarData",
+          type: "bdExtCalendarData",
           response: bodyObj,
         });
       }
