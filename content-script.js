@@ -12,7 +12,27 @@ const getCalendar = (initialDate) => {
   const calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: "dayGridMonth",
     headerToolbar: false,
-    initialDate
+    initialDate,
+    dateClick: function (value) {
+      if (!document.querySelector('[formcontrolname="recordDate"]')) {
+        document
+          .querySelector(
+            ".bdv-button-appearance-solid.bdv-button-color-secondary.bdv-button-size-md"
+          )
+          ?.click();
+      }
+      setTimeout(() => {
+        const inputDate = document.querySelector(
+          '[formcontrolname="recordDate"]'
+        );
+        if (inputDate) {
+          inputDate.value = value.date;
+          //data.dateStr
+          inputDate.dispatchEvent(new Event("input"));
+          inputDate.dispatchEvent(new Event("blur"));
+        }
+      }, 400);
+    },
   });
   calendar.render();
   return calendar;
